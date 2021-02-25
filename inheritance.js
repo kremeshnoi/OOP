@@ -1,9 +1,9 @@
 // Create parent class Animal
 class Animal {
-  constructor(species, sound, num_of_legs) {
+  constructor(species, sound, numOfLegs) {
     this.sound = sound
     this.species = species
-    this.num_of_legs = num_of_legs
+    this.numOfLegs = numOfLegs
   }
 
   // Add shared method
@@ -15,18 +15,18 @@ class Animal {
 // Create Dog child class and let it inherit from Animal class
 class Dog extends Animal {
   // Add some code specific for Dog class
-  constructor(species, num_of_legs, sound, can_retrieve) {
-    super(species, num_of_legs, sound)
-    this.can_retrieve = can_retrieve
+  constructor(species, numOfLegs, sound, canRetrieve) {
+    super(species, numOfLegs, sound)
+    this.canRetrieve = canRetrieve
   }
 }
 
 // Create Cat child class and let it inherit from Animal class
 class Cat extends Animal {
   // Add some code specific for Cat class
-  constructor(species, num_of_legs, sound, can_climb_trees) {
-    super(species, num_of_legs, sound)
-    this.can_climb_trees = can_climb_trees
+  constructor(species, numOfLegs, sound, canClimbTrees) {
+    super(species, numOfLegs, sound)
+    this.canClimbTrees = canClimbTrees
   }
 }
 
@@ -40,16 +40,16 @@ const cat = new Cat("Cat", 4, "Mew", true)
 dog.speak()
 
 // Can dog retrieve a ball?
-dog.can_retrieve
+dog.canRetrieve
 
 // Can dog climb trees?
-dog.can_climb_trees
+dog.canClimbTrees
 
 // Let cat speak
 cat.speak()
 
 // Can cat retrieve a ball?
-cat.can_retrieve
+cat.canRetrieve
 
 // Can cat climb trees?
-cat.can_climb_trees
+cat.canClimbTrees

@@ -10,12 +10,12 @@ class User {
   }
 
   // Create setter method to set, or change, username property
-  set username(new_username) {
-    if (new_username && new_username.length === 0) {
+  set username(newUsername) {
+    if (newUsername && newUsername.length === 0) {
       throw new Error("username must contain more than 0 characters")
     }
 
-    this.#_username = new_username
+    this.#_username = newUsername
   }
 
   // Create getter method to get email property
@@ -24,12 +24,12 @@ class User {
   }
 
   // Create setter method to set, or change, email property
-  set email(new_email) {
-    if (new_email && new_email.length === 0) {
+  set email(newEmail) {
+    if (newEmail && newEmail.length === 0) {
       throw new Error("email must contain more than 0 characters")
     }
 
-    this.#_email = new_email
+    this.#_email = newEmail
   }
 }
 
